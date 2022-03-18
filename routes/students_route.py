@@ -39,3 +39,5 @@ async def update_students(id: str, student: Students):
 async def delete_students(id: str):
     students_collection.find_one_and_delete({"_id": ObjectId(id)})
     return {"status": "ok"}
+
+
